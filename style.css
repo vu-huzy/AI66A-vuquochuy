@@ -1,0 +1,45 @@
+
+    * {
+    box-sizing: border-box;
+}
+      .card {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333;
+        color: aqua;
+        background-color: #f5f5f5;
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px 0;
+        flex: 1 1 200px;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      #top-product {
+        font-weight: bold;
+        color: blue;
+      }
+      .dashboard {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: rgb(28, 11, 14);
+        gap: 20px;
+      }
+    nav a:hover {
+        color: pink;
+      }
+      @media screen and (max-width: 768px) {
+        .dashboard {
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .card {
+          padding: 12px;
+        }
+      } 
